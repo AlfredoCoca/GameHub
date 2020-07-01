@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Theme</title>
+<link href="img/favicon.ico" rel="icon">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+	<link href="css/bootstrap-custom.css" re="stylesheet">
+	
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+    
+	<header class="header-area">
+		<div class="container">
+			
+			
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			  
+				<a class="navbar-brand" href="#">Optimizing Gaming</a>
+				
+				
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbar">
+				<ul class="navbar-nav ml-auto">
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Biblioteca</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="index.html">Inicio</a>
+				  </li>
+				  <li class="nav-item active">
+					<a class="nav-link" href="Descargas.html">Descargas</a>
+				  </li>
+				
+				  <li class="nav-item  dropdown">
+					<a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					 Tienda
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <a class="dropdown-item" href="Deportes.html">Deportes</a>
+					  <a class="dropdown-item" href="aventura.html">Aventura</a>
+					  <div class="dropdown-divider"></div>
+					  <a class="dropdown-item" href="index.html">Demos</a>
+					</div>
+				  </li>
+				</ul>
+
+			  </div>
+			</nav>
+			
+		</div>
+	</header>
+	<section id="descargas">
+	<div class="container">
+		<h1>Descargas</h1>
+		<div class="row">
+			<article class="col-md-4 col-sm-6">
+	
+		<img src="img/Screenshot_9.jpg" alt="descarga 1" class="img-fluid" width="200px">
+		<img src="img/Screenshot_13.jpg" alt="Descarga 2" class="img-fluid" width="200px">
+				
+		
+			
+			
+			</article>
+			<article class="col-md-8 col-sm-6">
+				<h3>Red Jumper</h3>
+			<p>Descarando 23MB / 2GB</p>
+				<p>Velocidad 2MBS</p>
+				<h3 class="dsc">Red Jumper</h3>
+			<p class="dsc">Descarando 23MB / 2GB</p>
+				<p class="dsc">Velocidad 2MBS</p>
+				
+			
+			
+			
+			</article>
+		
+			</div>
+		</div>
+	
+	
+	
+	</section>
+	
+
+	
+	
+	
+	
+	
+    
+
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/jquery.nav.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+        new WOW().init();
+	</script>
+    <script>
+		$(function() {
+			$(window).on('scroll', function () {
+				if ($(window).scrollTop() > 48) {
+					$('.header-area').addClass('sticky slideInDown');
+				} else {
+					$('.header-area').removeClass('sticky slideInDown');
+				}
+			});
+			
+			$('#navbar').onePageNav({
+				currentClass: 'active',
+				scrollSpeed: 1000,
+				easing: 'easeOutQuad'
+        	});
+			
+			
+			
+		});
+	</script>
+</body>
+
+</html>
